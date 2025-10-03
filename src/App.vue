@@ -1,5 +1,11 @@
-<template></template>
+<template>
+  <vue-header />
+</template>
 
-<script setup></script>
+<script setup lang="ts">
+import VueHeader from "./components/Header/VueHeader.vue";
+</script>
 
-<style scoped></style>
+<style lang="scss">
+@import "tailwindcss";
+</style>
