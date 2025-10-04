@@ -7,8 +7,13 @@ import {
     profile_green_icon 
 } from "../../assets/imports/icons"
 
-enum IconsButtonItem {
-
+export enum IconsButtonName {
+    HEFT = 'HEFT',
+    PROFILE = 'PROFILE',
+    PROFILE_GREEN = 'PROFILE_GREEN',
+    RISE = 'RISE',
+    SHOP = 'SHOP',
+    USER = 'USER'
 }
 
 const IconsButton = {

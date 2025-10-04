@@ -5,8 +5,8 @@
 
       <div class="flex gap-3 items-center">
         <vue-modification-button>Тестирование</vue-modification-button>
-        <img :src="shop_icon" alt="" class="w-6 h-6" />
-        <img :src="profile_icon" alt="" class="w-6 h-6" />
+        <vue-icon-button :icon-name="IconsButtonName.SHOP" />
+        <vue-icon-button :icon-name="IconsButtonName.PROFILE" />
       </div>
     </div>
     <vue-menu />
@@ -17,7 +17,8 @@
 import VueLogo from "../Logo/VueLogo.vue";
 import VueModificationButton from "../Buttons/VueModificationButton.vue";
 import VueMenu from "./Menu/VueMenu.vue";
-import { shop_icon, profile_icon } from "../../assets/imports/icons";
+import VueIconButton from "../Buttons/VueIconButton.vue";
+import { IconsButtonName } from "../Buttons/IconsButton";
 </script>
 
 <style lang="scss">
