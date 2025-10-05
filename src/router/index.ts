@@ -9,6 +9,7 @@ const Gifts = () => import('../pages/Gifts.vue');
 const Recommendations = () => import('../pages/Recommendations.vue');
 const Reviews = () => import('../pages/Reviews.vue');
 const Tracker = () => import('../pages/Tracker.vue');
+const Shop = () => import('../pages/Shop.vue')
 
 const routes: RouteRecordRaw[] = [
   {
@@ -45,6 +46,11 @@ const routes: RouteRecordRaw[] = [
     path: '/tracker',
     name: 'Tracker',
     component: Tracker
+  },  
+  {
+    path: '/shop',
+    name: 'Shop',
+    component: Shop,    
   },  
 ]
 
