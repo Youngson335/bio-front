@@ -1,19 +1,26 @@
 <template>
   <div class="vue-icon-button">
-    <button>
+    <button @click="onClick">
       <img :src="iconSrc" :alt="iconName" />
     </button>
   </div>
 </template>
 
 <script lang="ts" setup>
-import { defineProps, computed } from "vue";
+import { defineProps, defineEmits, computed } from "vue";
 import { IconsButtonName } from "./IconsButton";
 import IconsButton from "./IconsButton";
+import ComponentsEmits from "../../emits/ComponentEmits";
 
 const props = defineProps<{
   iconName: IconsButtonName;
 }>();
+
+const emits = defineEmits([ComponentsEmits.SELECT]);
+
+const onClick = () => {
+  emits(ComponentsEmits.SELECT);
+};
 
 const iconSrc = computed(() => {
   return IconsButton[props.iconName];
