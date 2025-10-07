@@ -18,7 +18,8 @@ const props = withDefaults(defineProps<Props>(), {
 });
 </script>
 <style lang="scss">
-@import "../../assets/style/colors.scss";
+// @import "../../assets/style/colors.scss";
+@import "../import.scss";
 .vue-modification-button {
   & button {
     text-align: center;
@@ -29,12 +30,12 @@ const props = withDefaults(defineProps<Props>(), {
   &--green {
     background-color: $green;
     color: $text_white;
-    border-top-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-top-left-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
     transition: all 0.3s ease-in-out;
     &:hover {
-      border-top-right-radius: 20px;
-      border-bottom-left-radius: 20px;
+      border-top-right-radius: $border-radius;
+      border-bottom-left-radius: $border-radius;
       transition: all 0.2s ease-in;
     }
     &:active {

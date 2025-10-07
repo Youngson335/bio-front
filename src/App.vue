@@ -1,6 +1,6 @@
 <template>
   <vue-header />
-  <RecommendationCard
+  <recommendation-card
     v-for="(item, index) of recommendationCardsDetails"
     :card="item"
     :key="index"
