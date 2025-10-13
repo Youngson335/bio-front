@@ -1,8 +1,10 @@
 <template>
-  <div class="vue-modification-button">
-    <button :class="`vue-modification-button--${props.color}`">
-      <slot />
-    </button>
+  <div class="block-blur block-blur-radius">
+    <div class="vue-modification-button">
+      <button :class="`vue-modification-button--${props.color}`">
+        <slot />
+      </button>
+    </div>
   </div>
 </template>
 <script lang="ts" setup>
@@ -18,7 +20,6 @@ const props = withDefaults(defineProps<Props>(), {
 });
 </script>
 <style lang="scss">
-// @import "../../assets/style/colors.scss";
 @import "../import.scss";
 .vue-modification-button {
   & button {
