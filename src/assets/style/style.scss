@@ -6,6 +6,7 @@
 @import '../style/colors.scss';
 
 $border-radius: 20px;
+$radius: 20px;
 
 * {
   box-sizing: border-box;
@@ -13,9 +14,24 @@ $border-radius: 20px;
   margin: 0px;
 }
 
+.block-blur {
+  padding: 5px;
+  backdrop-filter: blur(3px);
+  background: rgb(255 255 255 / 16%);
+  &-radius {
+    border-top-left-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
+  }
+}
+
 
 body {
   font-family: "Raleway";
+  background-image: url(../images/bg-1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
 }
 
 .container {
